@@ -308,18 +308,17 @@
                     </h5>
                     <div class="card-body">
                       <div class="booth">
-                        <video id="video" width="100%" height="100%" autoplay>
-                        </video>
+                        <img src="{{ url_for('video') }}" class="corner"></img>
                       </div>
 
-                      <div class="text-right">
+                      <!-- <div class="text-right">
                         <a href="#!" id="stop" class="btn btn-danger" onClick="stop()">
                           Stop Cam
                         </a>
                         <a href="#!" id="start"  class="btn btn-success" onClick="start()">
                           Start Cam
                         </a>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -351,7 +350,7 @@
               $("#start").click(() => {
                 console.log("evoked openCam");
                 $.ajax({
-                  url: "/opencam",
+                  url: "/video",
                   type: "GET",
                   error: function (data) {
                     console.log("upload error", data);

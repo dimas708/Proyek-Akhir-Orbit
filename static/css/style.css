@@ -1854,3 +1854,19 @@ section {
     padding-top: 4px;
   }
 }
+
+.corner {
+  border-radius: 25px;
+  border: 5px solid #212aad;
+  padding: 0px;
+  width:60%;
+  height:auto;
+  text-align: center;
+}
+
+.video-container {
+  justify-content: center;
+  text-align: center;
+  height:100%;
+  /*border: 1px solid black;*/
+}
